@@ -11,8 +11,6 @@ import java.util.TreeMap;
  * Need a TreeMap (key:String ,value: Integer) to work (use the bringOrder method of AnalyticsSorting).
  * This class is use to generate a new File call "result.out" or directly white on it all the symptoms 
  * with their count, if the file already exist.
- * 
- * There is also a show the list before and after the sorting (showList).
  */
 
 public class AnalyticsOutput {
@@ -24,6 +22,10 @@ public class AnalyticsOutput {
 		this.list = list;
 	}
 
+
+/** 
+ * This fonction will generate the fill "result.out" with all symptoms.	
+ */
 	public void output() {
 
 		if (!fileOut.exists()) { 										//create file

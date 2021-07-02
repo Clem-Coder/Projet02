@@ -5,7 +5,7 @@ import java.util.TreeMap;
 
 /**
  * Need a String list to work (use the counter method of AnalyticsList).
- * This class is used to sort list in a new collection who's a TreeMap (BringOrder) and @return this one. 
+ * This class is used to sort list in a new TreeMap's collection  (BringOrder) and @return this one. 
  * All the elements of the Map are sort in alphanumeric order, with their count.
  * 
  * There is also a show the list before and after the sorting (showList).
@@ -20,6 +20,11 @@ public class AnalyticsSorting {
 
 		toOrder = list;
 	}
+
+	
+/** 
+ * @return a sort list in alphanumeric order
+ */
 
 	public TreeMap<String, Integer> bringOrder() {
 
@@ -37,6 +42,11 @@ public class AnalyticsSorting {
 		return ordered;
 	}
 
+	
+/**
+ * The show in the shell if the sorting worked.
+ */
+	
 	public void showList() {
 		System.out.println("Before sorting : " + toOrder);
 		System.out.println("After sorting : " + ordered);
